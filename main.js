@@ -1,5 +1,13 @@
 import Livros from './Livros.js';
 
+// Alterando a cor do texto e fundo 
+document.getElementById('darkMode').addEventListener('click', () => {
+    document.querySelectorAll('*').forEach(element => {
+        element.style.color = 'white';
+        element.style.backgroundColor = 'black';
+    });
+});
+
 // Criando uma funcao construtora
 
 // const pessoa = function Pessoa(primeiro_nome, ultimo_nome, idade, CPF, UF) {
@@ -64,3 +72,6 @@ import Livros from './Livros.js';
 
 const livroJS = new Livros("JavaScript & JQuery", "Jon Duckett", "Academico", "Alta Books", 60.00);
 console.log(livroJS.apresentacao());
+
+
+
